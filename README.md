@@ -7,11 +7,12 @@ A Flask-based habit tracker with dark mode, badges, and analytics to help users 
 - 🎖️ Badge system for milestones
 - 📊 Analytics dashboard with charts
 - 📝 Add, edit, and delete habits
-<img width="1910" height="867" alt="Screenshot 2026-03-11 161620" src="https://github.com/user-attachments/assets/879342e1-ecbb-4490-8c02-2b913c78811a" />
-<img width="1916" height="889" alt="Screenshot 2026-03-11 161248" src="https://github.com/user-attachments/assets/0fab885b-30c4-4ec0-a075-2a9d0f057dd1" />
-<img width="1872" height="886" alt="Screenshot 2026-03-11 161537" src="https://github.com/user-attachments/assets/0e2beea3-6d48-4ee0-ac84-dd18a481d654" />
-<img width="1914" height="869" alt="Screenshot 2026-03-11 161552" src="https://github.com/user-attachments/assets/5c4fdd7a-05cd-4b1a-9f92-2ee8f89efd9e" />
-<img width="1904" height="785" alt="Screenshot 2026-03-11 161606" src="https://github.com/user-attachments/assets/d879990b-68c7-4e01-b236-4eef2890c9eb" />
+<img width="1904" height="751" alt="Screenshot 2026-03-11 175904" src="https://github.com/user-attachments/assets/23b637b2-e332-4cda-b23e-7abcc1877fdb" />
+<img width="1909" height="904" alt="Screenshot 2026-03-11 175922" src="https://github.com/user-attachments/assets/f7c0c76d-08a7-44a6-9d40-70fa56e4058c" />
+<img width="1886" height="897" alt="Screenshot 2026-03-11 180042" src="https://github.com/user-attachments/assets/2c340564-607e-4dc6-823b-e20090a0ec78" />
+<img width="1446" height="692" alt="Screenshot 2026-03-11 175938" src="https://github.com/user-attachments/assets/6611647a-76a6-40da-97cc-1811d3e96bb4" />
+<img width="1284" height="576" alt="Screenshot 2026-03-11 175949" src="https://github.com/user-attachments/assets/252b3eff-ff5b-40fb-ac89-c60ed7298d64" />
+
 ## ⚙️ Installation
  Clone the repository:
    ```bash
