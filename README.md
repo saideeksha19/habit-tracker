@@ -17,7 +17,7 @@ A Flask-based habit tracker with dark mode, badges, and analytics to help users 
    ```bash
    git clone https://github.com/saideeksha19/habit-tracker.git
 🌐 Usage
-- Open http://127.0.0.1:2005/ in Chrome (or whichever port you set in app.py).
+- Open http://http://127.0.0.1:5000/habitsn Chrome (or whichever port you set in app.py).
 - Create habits, track progress, and view analytics.
 
 🛠️ Tech Stack
