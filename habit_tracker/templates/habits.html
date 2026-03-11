@@ -1,0 +1,76 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container mt-4">
+  <h2>🌟 Your Habits</h2>
+
+  <div class="row mb-4">
+    <div class="col-md-4">
+      <div class="card text-bg-primary">
+        <div class="card-body">
+          <h5>Total Habits</h5>
+          <p class="fs-3">{{ total }}</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card text-bg-success">
+        <div class="card-body">
+          <h5>Longest Streak 🔥</h5>
+          <p class="fs-3">{{ longest }}</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card text-bg-warning">
+        <div class="card-body">
+          <h5>Average Progress 📈</h5>
+          <p class="fs-3">{{ average }}%</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h3>Add New Habit</h3>
+  <form method="POST" action="{{ url_for('add_habit') }}" class="mb-4">
+    <input type="text" name="name" placeholder="Habit name" required>
+    <input type="text" name="category" placeholder="Category" required>
+    <input type="date" name="date" required>
+    <button class="btn btn-primary">➕ Add Habit</button>
+  </form>
+
+  <div class="row">
+    {% for h in habits %}
+    <div class="col-md-6 mb-3">
+      <div class="card shadow-sm">
+        <div class="card-body">
+          <h5>
+            {% if h[3] == "Health" %}
+              <i class="fa-solid fa-heart-pulse text-danger"></i>
+            {% elif h[3] == "Learning" %}
+              <i class="fa-solid fa-book text-primary"></i>
+            {% elif h[3] == "Fitness" %}
+              <i class="fa-solid fa-dumbbell text-success"></i>
+            {% else %}
+              <i class="fa-solid fa-star text-warning"></i>
+            {% endif %}
+            {{ h[1] }} ({{ h[3] }})
+          </h5>
+          <p>Streak: {{ h[4] }} days</p>
+          <div class="progress mb-2">
+            <div class="progress-bar bg-info" role="progressbar" style="width: {{ h[5] }}%">
+              {{ h[5] }}%
+            </div>
+          </div>
+          <form method="POST" action="{{ url_for('checkin', habit_id=h[0]) }}">
+            <button class="btn btn-success">✅ Add Today’s Progress</button>
+          </form>
+          <form method="POST" action="{{ url_for('delete_habit', habit_id=h[0]) }}" class="mt-2">
+            <button class="btn btn-danger">🗑️ Delete Habit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+{% endblock %}

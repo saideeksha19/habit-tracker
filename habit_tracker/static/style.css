@@ -1,0 +1,30 @@
+/* Light mode */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f8f9fa;
+  color: #212529;
+}
+
+/* Dark mode */
+body.dark-mode {
+  background-color: #121212;
+  color: #f1f1f1;
+}
+
+body.dark-mode .navbar {
+  background: linear-gradient(90deg, #343a40, #000);
+}
+
+body.dark-mode .card {
+  background-color: #1e1e1e;
+  color: #f1f1f1;
+}
+
+.flash-messages {
+  list-style: none;
+  padding: 10px;
+  margin: 10px 0;
+  background: #d4edda;
+  color: #155724;
+  border-radius: 5px;
+}

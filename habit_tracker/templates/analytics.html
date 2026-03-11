@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container mt-4">
+  <h2>📊 Analytics</h2>
+  <ul>
+  {% for h in habits %}
+    <li>{{ h[0] }} - Streak: {{ h[1] }} days, Progress: {{ h[2] }}%</li>
+  {% endfor %}
+  </ul>
+
+  <h3>🏅 Badges</h3>
+  <ul>
+  {% for b in badges %}
+    <li>{{ b }}</li>
+  {% endfor %}
+  </ul>
+</div>
+{% endblock %}
